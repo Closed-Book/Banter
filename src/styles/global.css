@@ -1,0 +1,18 @@
+/* 占位全局样式 —— P4 提供 design tokens 后，P1/P4 在此扩展。
+   设计变量请落在 design/tokens.css，本文件 import 它。 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}

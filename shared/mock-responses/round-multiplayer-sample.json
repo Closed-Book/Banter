@@ -1,0 +1,53 @@
+{
+  "npc_responses": [
+    {
+      "name": "李明",
+      "role": "colleague",
+      "dialogue": "我早就说过这个方案有问题！项目延期就是因为你那边的设计稿一直改来改去！",
+      "inner_thought": "(先把锅甩出去，绝不能让领导觉得是我的问题)"
+    },
+    {
+      "name": "王总",
+      "role": "manager",
+      "dialogue": "小王，你怎么看？李明说的设计稿反复修改，是这么回事吗？",
+      "inner_thought": "(先听听双方说法，别急着站队)"
+    }
+  ],
+  "stats_change": {
+    "initiative": { "delta": -5, "current": 35 },
+    "patience": { "delta": -5, "current": 75 },
+    "goal_progress": { "delta": 0, "current": 10 }
+  },
+  "next_cards": [
+    {
+      "type": "high_eq",
+      "label": "高情商 · 对两人说",
+      "summary": "稳住情绪，用事实而非情绪回应，把判断权交给王总",
+      "full_text": "王总，我理解李明着急。设计稿确实改过两版，但都是因为需求方在第3天和第7天临时加了功能，邮件记录都在，我可以现在调出来。"
+    },
+    {
+      "type": "veteran",
+      "label": "老油条 · 对王总说",
+      "summary": "不直接对线李明，把话题引到流程优化上",
+      "full_text": "王总，与其纠结谁的责任，不如我们看看流程哪里能优化，避免下次再延期，您看呢？"
+    },
+    {
+      "type": "naive",
+      "label": "学生思维 · 对李明说",
+      "summary": "急着辩解但拿不出证据，显得心虚",
+      "full_text": "不是我的问题啊！是你们需求一直变，怎么能怪我呢……"
+    },
+    {
+      "type": "confrontational",
+      "label": "硬刚 · 对李明说",
+      "summary": "直接反击要求当场对质，但容易激化矛盾",
+      "full_text": "李明你这话我不爱听。延期是因为你那边接口拖了五天，要不要我把群聊记录发出来当着王总的面对一下？"
+    }
+  ],
+  "game_state": {
+    "current_round": 2,
+    "total_rounds": 10,
+    "is_ended": false,
+    "end_trigger": null
+  }
+}

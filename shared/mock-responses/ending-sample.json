@@ -1,0 +1,23 @@
+{
+  "ending": {
+    "grade": "A",
+    "title": "稳扎稳打的谈判者",
+    "one_liner": "你没拿到最多，但守住了底线——而且老板记住了你的名字。",
+    "radar": {
+      "expression": 75,
+      "empathy": 60,
+      "strategy": 85,
+      "resilience": 70,
+      "boundary": 80
+    },
+    "best_line": {
+      "round": 5,
+      "text": "张总，我理解公司情况，但这个数字低于市场25分位了。"
+    },
+    "worst_line": {
+      "round": 2,
+      "text": "嗯嗯，我理解的……"
+    },
+    "real_advice": "下次谈薪前准备好3个可量化的业绩数据，主动权从第一句话就要拿在手里。"
+  }
+}

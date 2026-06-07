@@ -1,0 +1,47 @@
+{
+  "npc_responses": [
+    {
+      "name": "张总",
+      "role": "boss",
+      "dialogue": "小王啊，你今年确实辛苦了，但你也知道，公司今年整体效益不太好……",
+      "inner_thought": "(他开始松动了，得加把劲压住)"
+    }
+  ],
+  "stats_change": {
+    "initiative": { "delta": 5, "current": 55 },
+    "patience": { "delta": -10, "current": 70 },
+    "goal_progress": { "delta": 8, "current": 38 }
+  },
+  "next_cards": [
+    {
+      "type": "high_eq",
+      "label": "高情商 · 以退为进",
+      "summary": "先认可公司困难，再用数据说明自己的价值",
+      "full_text": "张总说的对，今年确实不容易。不过我想跟您汇报一下，我负责的XX项目今年给部门带来了30%的效率提升……"
+    },
+    {
+      "type": "veteran",
+      "label": "老油条 · 转移焦点",
+      "summary": "不接他的话茬，把话题引到未来规划上",
+      "full_text": "张总，效益的事我理解。其实我更想聊聊明年的规划，我有一些想法想跟您请教……"
+    },
+    {
+      "type": "naive",
+      "label": "学生思维 · 被动接受",
+      "summary": "表示理解，没有提出自己的诉求",
+      "full_text": "嗯嗯，我理解的张总，公司不容易，那我继续努力吧……"
+    },
+    {
+      "type": "confrontational",
+      "label": "硬刚 · 直接摊牌",
+      "summary": "直接说出涨薪诉求，不绕弯",
+      "full_text": "张总，我理解公司情况，但我想直说——按我今年的产出，我认为涨薪15%是合理的，这也是市场水平。"
+    }
+  ],
+  "game_state": {
+    "current_round": 3,
+    "total_rounds": 10,
+    "is_ended": false,
+    "end_trigger": null
+  }
+}
