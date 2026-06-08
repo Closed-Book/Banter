@@ -17,7 +17,40 @@ cp .env.example .env      # 默认 VITE_USE_MOCK=true，没有 API key 也能空
 npm run dev               # 打开 http://localhost:5173
 ```
 
-接真实 API：把 `.env` 里 `VITE_USE_MOCK` 改为 `false`，填入 `VITE_STEPFUN_API_KEY`。
+Windows PowerShell 可用 `Copy-Item .env.example .env` 复制环境变量模板。
+
+接真实 API：把 `.env` 里 `VITE_USE_MOCK` 改为 `false`，填入服务端变量 `STEPFUN_ROLEPLAY_API_KEY`。不要把真实 key 写进前端代码或提交到 GitHub。
+
+### 运行模式
+
+项目保留完整 LLM 代理代码，但通过 `.env` 区分运行模式：
+
+- 实时 LLM 开发：复制 `.env.llm-live.example` 为 `.env`，填写自己的 `STEPFUN_ROLEPLAY_API_KEY`，按需填写 `STEPFUN_VOICE_API_KEY`。
+- 演示预制 TTS：复制 `.env.demo-prebuilt-tts.example` 为 `.env`，使用 `public/demo-tts/` 下的预制音频，不需要 API key。
+- 纯 UI 空跑：复制 `.env.example` 为 `.env`，保持 `VITE_USE_MOCK=true` 和 `VITE_TTS_MODE=off`。
+
+详细说明见 [版本模式说明](docs/版本模式说明.md)。
+
+### Stepfun TTS 语音播放
+
+对话页内置 TTS：可以朗读 NPC 台词，也可以在选中卡牌后朗读当前卡牌的示范话术。复制 `.env.example` 为 `.env` 后，至少填入服务端变量：
+
+```bash
+STEPFUN_VOICE_API_KEY=
+STEPFUN_BASE_URL=https://api.stepfun.com/v1
+```
+
+再运行：
+
+```bash
+npm run dev
+```
+
+修改 `.env` 后需要重启 dev server 才会重新读取 key。
+
+进入对话页后，右侧 `语音播放` 面板会使用：
+
+- TTS：调用本地 `/api/voice/tts`，由 Vite dev server 代理到 Stepfun `/audio/speech`。
 
 ---
 

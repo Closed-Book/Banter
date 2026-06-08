@@ -1,0 +1,285 @@
+{
+  "categories": [
+    {
+      "id": "workplace",
+      "name": "职场",
+      "keywords": ["老板", "同事", "HR", "甲方"],
+      "events": [
+        {
+          "id": "boss_pua_salary",
+          "name": "老板PUA你压薪",
+          "playable": true,
+          "multiplayer": false,
+          "brief": "年终review，老板约你单聊涨薪，但他并不打算松口",
+          "default_rounds": 10,
+          "npc_roles": ["boss"],
+          "default_personality": "smiling_tiger",
+          "difficulty": "hard",
+          "briefing_file": "场景1-老板PUA.md"
+        },
+        {
+          "id": "colleague_blame",
+          "name": "同事甩锅到你头上",
+          "playable": true,
+          "multiplayer": true,
+          "brief": "项目延期，同事抢先甩锅，领导冷眼旁观等你回应",
+          "default_rounds": 10,
+          "npc_roles": ["colleague", "manager"],
+          "default_personality": "hot_tempered",
+          "difficulty": "hard",
+          "briefing_file": "场景2-同事甩锅.md"
+        },
+        {
+          "id": "hr_ghosting",
+          "name": "HR已读不回要跟进",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "offer审批卡了一周，HR在聊天软件里装死",
+          "default_rounds": 8,
+          "npc_roles": ["hr"],
+          "default_personality": "calm",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "leader_empty_promise",
+          "name": "领导画饼拒绝加薪",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "你说要涨薪，领导聊了半小时公司愿景就是不谈数字",
+          "default_rounds": 10,
+          "npc_roles": ["boss"],
+          "default_personality": "smiling_tiger",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "forced_overtime",
+          "name": "被迫加班要说不",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "周五17:55，领导群里@你「周末加个班把这个需求赶出来」",
+          "default_rounds": 8,
+          "npc_roles": ["boss"],
+          "default_personality": "logic_crusher",
+          "difficulty": "medium",
+          "briefing_file": null
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "家庭",
+      "keywords": ["父母", "亲戚", "伴侣"],
+      "events": [
+        {
+          "id": "marriage_pressure",
+          "name": "催婚催生逼问",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "年夜饭桌上，三姑六婆轮番上阵，你的感情生活成了主菜",
+          "default_rounds": 10,
+          "npc_roles": ["relative"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "hard",
+          "briefing_file": null
+        },
+        {
+          "id": "relative_comparison",
+          "name": "亲戚饭桌比较'别人家的孩子'",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "二姨又开始了：'你看人家小王，今年又升职又买了房'",
+          "default_rounds": 8,
+          "npc_roles": ["relative"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "easy",
+          "briefing_file": null
+        },
+        {
+          "id": "career_interference",
+          "name": "父母干涉职业选择",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "你说想换行做自由职业，父母觉得你疯了",
+          "default_rounds": 10,
+          "npc_roles": ["parent"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "family_budget",
+          "name": "家庭开支分配谈崩",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "伴侣觉得你花钱大手大脚，你觉得对方管太宽",
+          "default_rounds": 10,
+          "npc_roles": ["partner"],
+          "default_personality": "logic_crusher",
+          "difficulty": "hard",
+          "briefing_file": null
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "name": "学校",
+      "keywords": ["导师", "室友", "辅导员"],
+      "events": [
+        {
+          "id": "advisor_talk",
+          "name": "导师办公室谈话",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "导师说你进度太慢，暗示你可能得延毕",
+          "default_rounds": 10,
+          "npc_roles": ["advisor"],
+          "default_personality": "calm",
+          "difficulty": "hard",
+          "briefing_file": null
+        },
+        {
+          "id": "group_project_slacker",
+          "name": "小组作业有人摆烂",
+          "playable": false,
+          "multiplayer": true,
+          "brief": "DDL还剩三天，有人连自己那部分还没开始做",
+          "default_rounds": 8,
+          "npc_roles": ["classmate"],
+          "default_personality": "hot_tempered",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "roommate_conflict",
+          "name": "室友生活习惯冲突",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "室友半夜打游戏开语音，你说过三次了毫无变化",
+          "default_rounds": 8,
+          "npc_roles": ["roommate"],
+          "default_personality": "hot_tempered",
+          "difficulty": "easy",
+          "briefing_file": null
+        },
+        {
+          "id": "counselor_meeting",
+          "name": "被辅导员约谈",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "有人举报你翻出校门，辅导员找你'了解情况'",
+          "default_rounds": 8,
+          "npc_roles": ["counselor"],
+          "default_personality": "calm",
+          "difficulty": "medium",
+          "briefing_file": null
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "社交",
+      "keywords": ["朋友", "饭局", "陌生人", "邻居"],
+      "events": [
+        {
+          "id": "friend_borrow_money",
+          "name": "朋友开口借钱",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "多年不联系的老同学突然约你吃饭，菜还没上就开口借5万",
+          "default_rounds": 8,
+          "npc_roles": ["friend"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "moral_blackmail",
+          "name": "被道德绑架帮忙",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "'大家都是朋友嘛，这点忙都不帮？'对方一开口就站在道德高地",
+          "default_rounds": 8,
+          "npc_roles": ["friend"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "medium",
+          "briefing_file": null
+        },
+        {
+          "id": "drinking_pressure",
+          "name": "饭局上被长辈灌酒劝酒",
+          "playable": false,
+          "multiplayer": true,
+          "brief": "领导客户都在，你不喝就是不给面子，喝了你明天还要加班",
+          "default_rounds": 8,
+          "npc_roles": ["elder", "colleague"],
+          "default_personality": "emotional_blackmail",
+          "difficulty": "hard",
+          "briefing_file": null
+        },
+        {
+          "id": "neighbor_noise",
+          "name": "邻居噪音交涉",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "楼上每晚11点开始拖椅子，你上楼敲门，对方开门就怼",
+          "default_rounds": 6,
+          "npc_roles": ["neighbor"],
+          "default_personality": "hot_tempered",
+          "difficulty": "easy",
+          "briefing_file": null
+        },
+        {
+          "id": "stranger_accusation",
+          "name": "被陌生人无理指责",
+          "playable": false,
+          "multiplayer": false,
+          "brief": "地铁上被人撞了一下，对方反过来大声指责你挡路",
+          "default_rounds": 5,
+          "npc_roles": ["stranger"],
+          "default_personality": "hot_tempered",
+          "difficulty": "easy",
+          "briefing_file": null
+        }
+      ]
+    }
+  ],
+  "personalities": [
+    {
+      "id": "calm",
+      "name": "沉着冷静型",
+      "feature": "不急不躁，用沉默施压",
+      "prompt_hint": "语速慢，停顿多，反问为主",
+      "icon": "🧊"
+    },
+    {
+      "id": "hot_tempered",
+      "name": "暴躁易怒型",
+      "feature": "容易拍桌子，声量压人",
+      "prompt_hint": "短句，感叹号多，爱打断",
+      "icon": "🔥"
+    },
+    {
+      "id": "smiling_tiger",
+      "name": "笑面虎型",
+      "feature": "表面温和，句句埋刀",
+      "prompt_hint": "语气亲切但每句都在施压，善用'我也是为你好'",
+      "icon": "😊"
+    },
+    {
+      "id": "emotional_blackmail",
+      "name": "情感绑架型",
+      "feature": "用关系/恩情/道德绑架",
+      "prompt_hint": "'我当初怎么带你的''你忍心吗'",
+      "icon": "😢"
+    },
+    {
+      "id": "logic_crusher",
+      "name": "逻辑碾压型",
+      "feature": "用数据/事实/制度堵你的嘴",
+      "prompt_hint": "引用规章、数据、先例，让你无从反驳",
+      "icon": "📊"
+    }
+  ]
+}

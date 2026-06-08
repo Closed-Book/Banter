@@ -1,0 +1,232 @@
+{
+  "categories": [
+    {
+      "id": "workplace",
+      "name": "职场",
+      "keywords": ["老板", "同事", "HR", "甲方"],
+      "events": [
+        {
+          "id": "boss_pua_salary",
+          "name": "老板PUA你压薪",
+          "playable": true,
+          "multiplayer": false,
+          "recommended_personality": "smiling_tiger",
+          "briefing_file": "briefings/场景1-老板PUA.md",
+          "demo_label": "MVP首发",
+          "one_liner": "年终review里，老板把你的涨薪诉求包装成“不成熟”和“不懂公司难处”。"
+        },
+        {
+          "id": "colleague_blame",
+          "name": "同事甩锅到你头上",
+          "playable": true,
+          "multiplayer": true,
+          "recommended_personality": "angry_plus_observer",
+          "briefing_file": "briefings/场景2-同事甩锅.md",
+          "demo_label": "加分场景",
+          "one_liner": "项目复盘会上，同事抢先发难，把延期责任推到你身上。"
+        },
+        {
+          "id": "office_cafe_interview",
+          "name": "办公室咖啡厅面试",
+          "playable": true,
+          "multiplayer": false,
+          "recommended_personality": "interview_probe_leader",
+          "briefing_file": "briefings/场景3-办公室咖啡厅面试.md",
+          "demo_label": "新增试炼",
+          "one_liner": "终面里，男领导坐在正对面，通过表情、态度和手势反馈你的岗位匹配度。"
+        },
+        {
+          "id": "hr_ghosting",
+          "name": "HR已读不回要跟进",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "calm",
+          "demo_label": "即将开放",
+          "one_liner": "面试后HR迟迟不回，你需要跟进进度又不显得卑微。"
+        },
+        {
+          "id": "leader_empty_promise",
+          "name": "领导画饼拒绝加薪",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "logic_pressure",
+          "demo_label": "即将开放",
+          "one_liner": "领导不断谈成长和机会，却回避明确薪资承诺。"
+        },
+        {
+          "id": "forced_overtime",
+          "name": "被迫加班要说不",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "emotional_blackmail",
+          "demo_label": "即将开放",
+          "one_liner": "临下班被安排非紧急任务，你要守住边界又不把关系撕破。"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "家庭",
+      "keywords": ["父母", "亲戚", "伴侣"],
+      "events": [
+        {
+          "id": "marriage_pressure",
+          "name": "催婚催生逼问",
+          "playable": false,
+          "multiplayer": true,
+          "recommended_personality": "emotional_blackmail",
+          "demo_label": "即将开放",
+          "one_liner": "饭桌上亲戚轮番追问感情进度，你要回应但不交出隐私。"
+        },
+        {
+          "id": "relative_comparison",
+          "name": "亲戚饭桌比较别人家的孩子",
+          "playable": false,
+          "multiplayer": true,
+          "recommended_personality": "smiling_tiger",
+          "demo_label": "即将开放",
+          "one_liner": "亲戚借玩笑贬低你，你需要体面接住并划出边界。"
+        },
+        {
+          "id": "career_interference",
+          "name": "父母干涉职业选择",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "emotional_blackmail",
+          "demo_label": "即将开放",
+          "one_liner": "父母以稳定为名否定你的职业规划，你要争取理解而不是吵赢。"
+        },
+        {
+          "id": "family_budget_conflict",
+          "name": "家庭开支分配谈崩",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "logic_pressure",
+          "demo_label": "即将开放",
+          "one_liner": "家庭共同开支分配失衡，你要把感受转化成可执行方案。"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "name": "学校",
+      "keywords": ["导师", "室友", "辅导员"],
+      "events": [
+        {
+          "id": "advisor_office_talk",
+          "name": "导师办公室谈话",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "logic_pressure",
+          "demo_label": "即将开放",
+          "one_liner": "导师要求你接额外课题，你要争取资源和边界。"
+        },
+        {
+          "id": "group_work_slacker",
+          "name": "小组作业有人摆烂",
+          "playable": false,
+          "multiplayer": true,
+          "recommended_personality": "angry",
+          "demo_label": "即将开放",
+          "one_liner": "队友长期不交付，你要推进协作并留下责任证据。"
+        },
+        {
+          "id": "roommate_conflict",
+          "name": "室友生活习惯冲突",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "calm",
+          "demo_label": "即将开放",
+          "one_liner": "室友深夜外放和开灯，你要表达不满但避免宿舍冷战。"
+        },
+        {
+          "id": "counselor_warning",
+          "name": "被辅导员约谈",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "logic_pressure",
+          "demo_label": "即将开放",
+          "one_liner": "辅导员就考勤和状态约谈，你要说明情况并争取支持。"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "社交",
+      "keywords": ["朋友", "饭局", "陌生人"],
+      "events": [
+        {
+          "id": "friend_borrow_money",
+          "name": "朋友开口借钱",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "emotional_blackmail",
+          "demo_label": "即将开放",
+          "one_liner": "朋友突然借一大笔钱，你要保住关系也保住自己的现金流。"
+        },
+        {
+          "id": "moral_blackmail_help",
+          "name": "被道德绑架帮忙",
+          "playable": false,
+          "multiplayer": false,
+          "recommended_personality": "smiling_tiger",
+          "demo_label": "即将开放",
+          "one_liner": "对方用“顺手而已”压低你的时间成本，你要温和拒绝。"
+        },
+        {
+          "id": "dinner_drinking_pressure",
+          "name": "饭局上被长辈灌酒劝酒",
+          "playable": false,
+          "multiplayer": true,
+          "recommended_personality": "emotional_blackmail",
+          "demo_label": "即将开放",
+          "one_liner": "饭局气氛推着你喝酒，你要拒绝但不让场面失控。"
+        }
+      ]
+    }
+  ],
+  "personalities": [
+    {
+      "id": "calm",
+      "name": "沉着冷静型",
+      "feature": "不急不躁，用停顿和反问制造压力",
+      "prompt_anchor": "语速慢，停顿多，常用“你确定吗”“证据是什么”把压力还给用户。"
+    },
+    {
+      "id": "angry",
+      "name": "暴躁易怒型",
+      "feature": "容易抢话、升高音量、用情绪压过事实",
+      "prompt_anchor": "短句多，反问多，会打断用户，但不使用暴力或违法威胁。"
+    },
+    {
+      "id": "smiling_tiger",
+      "name": "笑面虎型",
+      "feature": "表面温和，句句埋刀",
+      "prompt_anchor": "语气亲切，善用“我也是为你好”“公司不容易”，实际持续压低用户诉求。"
+    },
+    {
+      "id": "emotional_blackmail",
+      "name": "情感绑架型",
+      "feature": "用关系、恩情、道德责任压迫用户让步",
+      "prompt_anchor": "常说“你忍心吗”“我当初怎么帮你的”，把拒绝包装成亏欠。"
+    },
+    {
+      "id": "logic_pressure",
+      "name": "逻辑碾压型",
+      "feature": "用制度、数据、先例堵住用户表达",
+      "prompt_anchor": "引用流程、规章、行业情况和模糊数据，让用户觉得自己没资格谈条件。"
+    },
+    {
+      "id": "angry_plus_observer",
+      "name": "暴躁同事 + 观望领导",
+      "feature": "一人抢先甩锅，一人冷静追问",
+      "prompt_anchor": "李明先用情绪抢叙事权，王总保持中立并要求证据。"
+    },
+    {
+      "id": "interview_probe_leader",
+      "name": "试探型男性领导",
+      "feature": "正面观察候选人，用表情、停顿、手势和追问释放真实反馈",
+      "prompt_anchor": "陈总坐在用户正对面，语气克制但会通过挑眉、抱臂、前倾、记录、端杯停顿等非言语信号表达认可、怀疑、压力测试或收束意图。"
+    }
+  ]
+}

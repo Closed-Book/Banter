@@ -6,6 +6,9 @@ dist
 .DS_Store
 *.log
 .vite
+tmp/
+skills/
+*-handoff-*.zip
 .idea
 .vscode/*
 !.vscode/extensions.json

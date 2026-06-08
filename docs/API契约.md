@@ -23,7 +23,7 @@
 ## 请求结构
 
 ```jsonc
-POST {VITE_STEPFUN_BASE_URL}/chat/completions
+POST /api/roleplay/chat/completions
 {
   "model": "step-2-16k",
   "messages": [
@@ -34,6 +34,8 @@ POST {VITE_STEPFUN_BASE_URL}/chat/completions
   "temperature": 0.7
 }
 ```
+
+本地开发时，前端请求会先进入 Vite dev server 的 `/api/roleplay` 代理，再由服务端读取 `.env` 里的 `STEPFUN_ROLEPLAY_API_KEY` 调用 Stepfun。真实 key 不需要、也不应该放进 `VITE_*` 前端环境变量。
 
 ## 返回结构（两种）
 
