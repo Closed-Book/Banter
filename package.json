@@ -1,9 +1,9 @@
 {
-  "name": "bie-ba-tian-liao-si",
+  "name": "banter",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "《别把天聊死》—— AI 现实社交副本训练智能体",
+  "description": "《Banter》—— AI 现实社交副本训练智能体",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
